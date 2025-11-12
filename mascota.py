@@ -1,4 +1,4 @@
-from db_config import db 
+from db import db 
 
 class Mascota(db.Model): #usar mayusculas para las clases
     _tablename_="mascota"
