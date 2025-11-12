@@ -22,6 +22,7 @@ class Programa:
         if request.method == "POST":
             nombre = request.form['nombre']
             raza = request.form['raza']
+            dueño = request.form['dueño']
             edad = request.form['edad']
 
             mimascota = Mascota(nombre=nombre, raza=raza, edad=edad)
@@ -33,4 +34,3 @@ class Programa:
         return render_template('nuevamascota.html')
 
 miprograma = Programa()
-
